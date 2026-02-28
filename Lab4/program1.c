@@ -5,7 +5,7 @@ int main() {
     int score; // Declare an integer variable to store the score
 
     while (1) {
-        printf("Enter 0 or 1 to STOP\n"); // Prompt the user to enter a score
+        printf("\nEnter 0 or 1 to STOP\n"); // Prompt the user to enter a score
         printf("Enter the NFL score: "); // Prompt the user to enter the NFL score
 
         // Read the score from the user input and check if it's a valid integer
