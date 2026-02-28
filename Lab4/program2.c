@@ -65,7 +65,7 @@ int main() {
 
         if (from_scale == 1) c_temp = fahrenheit_to_celsius(temp);
         else if (from_scale == 2) c_temp = temp;
-        else c_temp = kelvin_to_celsius(temp);
+        else if (from_scale == 3) c_temp = kelvin_to_celsius(temp);
 
         if (c_temp < -273.15) {
             printf("Error: Temperature can't be below zero Kelvin, Please try again. \n");
