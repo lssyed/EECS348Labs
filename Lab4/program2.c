@@ -21,7 +21,7 @@ void categorize_temperature(float c) {
     // Cold: 0°C to 10°C
     else if (c < 10) printf("Category: Cold\nAdvisory: Wear a light jacket! \n");
     // Comfortable: 10°C to 25°C
-    else if (c < 25) printf("Category: Comfortable\nAdvisory: Enjoy the beautiful weather! \n");
+    else if (c <= 25) printf("Category: Comfortable\nAdvisory: Enjoy the beautiful weather! \n");
     // Hot: 25°C to 35°C
     else if (c <= 35) printf("Category: Hot\nAdvisory: Drink plenty of water and stay cool! \n");
     // Extreme Heat: > 35°C
