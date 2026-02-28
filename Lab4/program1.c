@@ -22,11 +22,11 @@ int main() {
 
         printf("Possible combinations for %d: \n", score);// Print the possible combinations for the entered score
 
-        for (int td8 = 0; td8 <= score / 8; td8++) { // Loop through possible combinations of touchdowns worth 8 points
-            for (int td7 = 0; td7 <= score / 7; td7++) { // Loop through possible combinations of touchdowns worth 7 points
-                for (int td6 = 0; td6 <= score / 6; td6++) { // Loop through possible combinations of touchdowns worth 6 points
-                    for (int fg3 = 0; fg3 <= score / 3; fg3++) { // Loop through possible combinations of field goals worth 3 points
-                        for (int saf2 = 0; saf2 <= score / 2; saf2++) { // Loop through possible combinations of safeties worth 2 points
+        for (int td8 = 0; td8 * 8 <= score; td8++) { // Loop through possible combinations of touchdowns worth 8 points
+            for (int td7 = 0; td7 * 7 <= score; td7++) { // Loop through possible combinations of touchdowns worth 7 points
+                for (int td6 = 0; td6 * 6 <= score; td6++) { // Loop through possible combinations of touchdowns worth 6 points
+                    for (int fg3 = 0; fg3 * 3 <= score; fg3++) { // Loop through possible combinations of field goals worth 3 points
+                        for (int saf2 = 0; saf2 * 2 <= score; saf2++) { // Loop through possible combinations of safeties worth 2 points
                             // Calculate the total points for this combination
                             int total = (td8 * 8) + (td7 * 7) + (td6 * 6) + (fg3 * 3) + (saf2 * 2); 
                             
