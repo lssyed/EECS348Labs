@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 // Function to convert Celsius to Fahrenheit
-float celcius_to_farenheit(float c) { return (9.0/5.0) * c + 32.0; }
+float celsius_to_farenheit(float c) { return (9.0/5.0) * c + 32.0; }
 
 // Function to convert Fahrenheit to Celsius
 float fahrenheit_to_celsius(float f) {return (5.0/9.0) * (f - 32.0); }
