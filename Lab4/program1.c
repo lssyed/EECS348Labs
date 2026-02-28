@@ -7,11 +7,17 @@ int main() {
     while (1) {
         printf("Enter 0 or 1 to STOP\n"); // Prompt the user to enter a score
         printf("Enter the NFL score: "); // Prompt the user to enter the NFL score
-        scanf("%d", &score); // Read the score from the user input
 
-        if (score <= 1) { // Check if the score is 0 or 1
-            break;
+        // Read the score from the user input and check if it's a valid integer
+        if (scanf("%d", &score) != 1) {
+            printf("Invalid input. Please enter a number. \n");
+            // Clear the input buffer to remove the invalid input
+            while(getchar() != '\n');
+            continue;
+        } // Read the score from the user input
 
+        if (score <= 1) break; // Check if the score is 0 or 1
+        
         }
 
         printf("Possible combinations for %d: \n", score);// Print the possible combinations for the entered score
