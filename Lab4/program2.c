@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 // Function to convert Celsius to Fahrenheit
-float celsius_to_farenheit(float c) { return (9.0/5.0) * c + 32.0; }
+float celsius_to_fahrenheit(float c) { return (9.0/5.0) * c + 32.0; }
 
 // Function to convert Fahrenheit to Celsius
 float fahrenheit_to_celsius(float f) {return (5.0/9.0) * (f - 32.0); }
@@ -63,10 +63,12 @@ int main() {
             continue;
         }
 
-        // Prompt user for target scale
-        if (from_scale == 3 && temp < 0.0) {
-            // Handle invalid Kelvin input
-            printf("Error: Kelvin values can't be negative. Please try again. \n");
+        if (from_scale == 1) c_temp = fahrenheit_to_celsius(temp);
+        else if (from_scale == 2) c_temp = temp;
+        else c_temp = kelvin_to_celsius(temp);
+
+        if (c_temp < -273.15) {
+            printf("Error: Temperature can't be below zero Kelvin, Please try again. \n");
             continue;
         }
 
@@ -104,7 +106,7 @@ int main() {
     // Convert from Celsius to the target scale
     if (to_scale == 1) {
         // Convert from Celsius to Fahrenheit
-        result = celsius_to_farenheit(c_temp);
+        result = celsius_to_fahrenheit(c_temp);
         printf("\nResult: %.2f Fahrenheit\n", result);
     // If the target scale is Celsius, we can just use same value
     } else if (to_scale == 2) {

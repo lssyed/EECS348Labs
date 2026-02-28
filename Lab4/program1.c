@@ -6,7 +6,7 @@ int main() {
 
     while (1) {
         printf("Enter 0 or 1 to STOP\n"); // Prompt the user to enter a score
-        printf("ENter the NFL score: "); // Prompt the user to enter the NFL score
+        printf("Enter the NFL score: "); // Prompt the user to enter the NFL score
         scanf("%d", &score); // Read the score from the user input
 
         if (score <= 1) { // Check if the score is 0 or 1
@@ -26,7 +26,7 @@ int main() {
                             
                             // If the total exactly matches the target score
                             if (total == score) { 
-                                printf("%d TD+2pt, %d TD+FG, %d TD, %d 3ptFG, %d Safety\n", td8, td7, td6, fg3, saf2);
+                                printf("%d TD+2pt, %d TD+FG, %d TD, %d 3pt FG, %d Safety\n", td8, td7, td6, fg3, saf2);
                             }
                         }
                     }
