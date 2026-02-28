@@ -18,7 +18,7 @@ int main() {
 
         if (score <= 1) break; // Check if the score is 0 or 1
         
-        }
+    
 
         printf("Possible combinations for %d: \n", score);// Print the possible combinations for the entered score
 
@@ -40,6 +40,5 @@ int main() {
             }
         }
     }
-
     return 0;
 }
