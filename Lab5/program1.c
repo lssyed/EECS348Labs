@@ -5,7 +5,7 @@ int main() {
     // Initialize sales data and month names from Sample Output
     double sales[12] = {23458.01, 40112.00, 56011.85, 37820.88, 37904.67, 60200.22, 
                         72400.31, 56210.89, 67230.84, 68233.12, 80950.34, 95225.22};
-    char *months = {"January", "February", "March", "April", "May", "June"
+    char *months[12] = {"January", "February", "March", "April", "May", "June",
                     "July", "August", "September", "October", "November", "December"};
     
     printf("Monthly Sales Report for 2024\n\n");
