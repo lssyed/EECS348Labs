@@ -26,11 +26,12 @@ int main() {
     // Find the minimum, maximum, and sum of sales
     for (int i = 0; i < 12; i++) {
         sum = sum + sales[i];
-
+        // Update minimum sales and corresponding month
         if (sales[i] < min) {
             min = sales[i];
             min_month = months[i];
         }
+        // Update maximum sales and corresponding month
         if (sales[i] > max) {
             max = sales[i];
             max_month = months[i];
