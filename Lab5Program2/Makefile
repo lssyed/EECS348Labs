@@ -4,16 +4,11 @@ CC = gcc
 # Define any compile-time flags (-Wall and -Wextra turn on useful warnings)
 CFLAGS = -Wall -Wextra -std=c11
 
-# Define the name of the final executable file
-TARGET = program2
+program2: program2.c
+	$(CC) $(CFLAGS) program2.c -o program2
 
-# The default rule that runs when you just type 'make'
-all: $(TARGET)
-
-# The rule to build our executable
-$(TARGET): program2.c
-	$(CC) $(CFLAGS) -o $(TARGET) program2.c
-
+run: program2
+	./program2
 # A rule to clean up our directory (removes the executable)
 clean:
-	rm -f $(TARGET)
+	rm -f program2
