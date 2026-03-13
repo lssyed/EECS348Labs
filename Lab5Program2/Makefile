@@ -9,6 +9,7 @@ program2: program2.c
 
 run: program2
 	./program2
+	
 # A rule to clean up our directory (removes the executable)
 clean:
 	rm -f program2
