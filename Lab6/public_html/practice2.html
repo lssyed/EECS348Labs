@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Practice 2</title>
+    </head>
+    <body>
+        <h2>Style Changer</h2>
+
+        <p id="sampleText" style="border: 1px solid black; padding: 10px">
+            This is a sample text. Change my colors and border!
+        </p>
+
+        Text Color (R, G, B): <input type="text" id="textColor" value="255, 0, 0"><br><br>
+        Border Color (R, G, B): <input type="text" id="borderColor" value="0, 0, 255"><br>
+        Border Width (px): <input type="number" id="borderWidth" value="5"><br><br>
+
+        <button onclick="changeStyle()">Apply Styles</button>
+
+        <script>
+            // Once the button is clicj=ked, this block of code runs
+            function changeStyle() {
+                // Grabs the values the user typed in
+                let tColor = document.getElementById("textColor").value;
+                let bColor = document.getElementById("borderColor").value;
+                let bWidth = document.getElementById("borderWidth").value;
+
+                // Finds where these changes need to be made
+                let paragraph = document.getElementById("sampleText");
+
+                // COmbines rgb with the numbers typed by user
+                paragraph.style.color = "rgb(" + tColor + ")";
+                paragraph.style.borderColor = "rgb(" + bColor + ")";
+
+                // This takes care of the width by adding pixels
+                paragraph.style.borderWidth = bWidth + "px";
+            }
+        </script>
+    </body>
+</html>
