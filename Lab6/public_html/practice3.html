@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Practice 3</title>
+    </head>
+    <body>
+        <h2>Create a Password</h2>
+
+        <label>Password:</label>
+        <input type="password" id="p1"><br><br>
+
+        <label>Confirm Password:</label>
+        <input type="password" id="p2"><br><br>
+
+        <button onclick="checkPasswords()">Verify</button>
+
+        <script>
+            // This code runs once user clicks on Verify button
+            function checkPasswords() {
+                // Gets the text entered by user
+                let password1 = document.getElementById("p1").value;
+                let password2 = document.getElementById("p2").value;
+
+                // Checks if password is too short
+                if (password1.length < 8) {
+                    alert("ERROR! Password must be atleast 8 characters long.");
+                // Checks if the paswords are different
+                } else if (password1 != password2) {
+                    alert("ERROR! Passwords don't match. ");
+                // Tells the user the passwords match    
+                } else {
+                    alert("SUCCESS! Passwords match. ");
+                }
+            }
+        </script>
+    </body>
+</html>
