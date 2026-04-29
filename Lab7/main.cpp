@@ -121,7 +121,7 @@ int main() {
     Matrix mat1, mat2;
     // Sets size of 1st matrix
     mat1.size = n;
-    // Sets size of 2nd matrix
+    // Sets size of 2nd ma
     mat2.size = n;
 
     // Saves the numbers into Matrix 1
