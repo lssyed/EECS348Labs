@@ -1,8 +1,10 @@
 How I Used AI To Generate Code For This Lab
 * Tool: I used Gemini Advanced (Gemini 3.1 Pro model) to generate the code. This is the full chat I used : https://gemini.google.com/share/2de71703f187
 * Approach: The entire code is AI-Generated, but I guided the process step-by-step. I told the AI right away that we would be building the program in parts and adding new requirements as we went.
-* Prompting: I kept my prompts as simple and direct as possible. I outlined exactly what I wanted the code to do, and also what I didn't want it to include. For example, since I was building an arithmetic expression parser, I strictly told AI not to use advanced C++ imports or complex in-built functions, forcing it to stick with a beginner-level logic and the core requirements. 
+* Prompting: I kept my prompts as simple and direct as possible. I outlined exactly what I wanted the code to do, and also what I didn't want it to include. 
+For example, since I was building an arithmetic expression parser, I strictly told AI not to use advanced C++ imports or complex in-built functions, forcing it to stick with a beginner-level logic and the core requirements. 
 * Skill Level: To make sure the output matched my current knowledge, I told the AI to write "beginner-level" code and include comments explaining every single block.
-* Understanding: I didn't just copy and paste the code. First, I had AI explain what the code was doing in simple plain English. Then, I asked AI to take on the role of a TA and asked it to quiz me on the concepts to prove that I fully understand how it worked.
+* Understanding: I didn't just copy and paste the code. First, I had AI explain what the code was doing in simple plain English. 
+Then, I asked AI to take on the role of a TA and asked it to quiz me on the concepts to prove that I fully understand how it worked.
 * Fact-Chaecking: I just didn't trust AI blindly. I double-checked its formatting and function usage against sites like W3Schools and GeeksForGeeks to make sure I was doing things the right way. 
 * Testing: I had AI run a couple of test cases to prove the code actually worked. 
